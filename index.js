@@ -19,7 +19,7 @@ class Deck {
   constructor() {
     this.deck = [];
   }
-
+//deck suits
   createDeck() {
     let suit = [
       "♠", 
@@ -44,9 +44,11 @@ class Deck {
     ];
 
     for (let i = 0; i < suit.length; i++) {
-      for let (j = 0; j < card.length; j++) {
+      for (let j = 0; j < card.length; j++) {
         this.deck.push(new Card(suit[i], card[j]));
       }
     }
   }
 }
+
+console.log(Deck);
