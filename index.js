@@ -1,10 +1,21 @@
 //class which holds name and hand values
 class Player {
-  constructor(name) {
-    this.name = name;
+  constructor() {
+    this.player = [];
     this.hand = [];
   }
+
+//function to create players for the game
+createPlayers() {
+  for (let i = 0; i < 2; i++) {
+    let playerName = prompt(`The name for Player ${[i + 1]}`);
+      this.player.push(playerName);
+    }
+    return this.player;
+  }
+
 }
+
 
 //class which holds card suit and numeric values
 class Card {
@@ -14,12 +25,12 @@ class Card {
   }
 }
 
-//class which holds the values which make up the total deck of cards
+//class which holds the values and function which make up the total deck of cards
 class Deck {
   constructor() {
     this.deck = [];
   }
-//deck suits
+
   createDeck() {
     let suit = [
       "♠", 
@@ -50,5 +61,3 @@ class Deck {
     }
   }
 }
-
-console.log(Deck);
